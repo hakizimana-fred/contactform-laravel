@@ -13,7 +13,7 @@
 <body>
     <div class="container mt-5">
         <h1>Contacts us</h1>
-        <form method="post">
+        <form method="post" action="{{route('submitted')}}">
             @csrf
             <div class="form-group">
                 <label for="name" class="form-label">Name </label>

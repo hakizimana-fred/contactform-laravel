@@ -11,4 +11,9 @@ class ContactController extends Controller
     {
         return view('contact');
     }
+
+    public function store()
+    {
+        return 'OK';
+    }
 }

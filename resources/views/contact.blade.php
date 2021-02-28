@@ -13,6 +13,17 @@
 <body>
     <div class="container mt-5">
         <h1>Contacts us</h1>
+
+        @if($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+
         <form method="post" action="{{route('submitted')}}">
             @csrf
             <div class="form-group">

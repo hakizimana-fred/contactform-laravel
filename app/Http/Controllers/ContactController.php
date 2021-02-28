@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -12,7 +13,7 @@ class ContactController extends Controller
         return view('contact');
     }
 
-    public function store()
+    public function store(ContactRequest $request)
     {
         return 'OK';
     }
